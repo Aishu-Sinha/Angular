@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+//import for services
 import { DataService } from './data.service';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +23,7 @@ import { AboutComponent } from './about/about.component';
     FormsModule,
     BrowserAnimationsModule
   ],
+  //added for service, go to components ts file
   providers: [DataService],
   bootstrap: [AppComponent]
 })
